@@ -94,7 +94,7 @@ function App() {
           <div className={`nav-menu ${menuAberto ? 'active' : ''}`}>
             <a href="#sobre" className="nav-link" onClick={fecharMenu}>Sobre</a>
             <a href="#beneficios" className="nav-link" onClick={fecharMenu}>Benefícios</a>
-            <a href="#mascote" className="nav-link" onClick={fecharMenu}>Mascote</a>
+            <a href="#professor" className="nav-link" onClick={fecharMenu}>Professor</a>
             <a href="#horarios" className="nav-link" onClick={fecharMenu}>Horários</a>
             <a href="#duvidas" className="nav-link" onClick={fecharMenu}>Dúvidas</a>
             <a href="#contato" className="nav-link" onClick={fecharMenu}>Contato</a>
@@ -259,23 +259,68 @@ function App() {
       </section>
 
       {/* Mascote */}
-      <section className="mascote" id="mascote">
+      <section className="mascote" id="professor">
         <div className="container">
           <div className="mascote-card">
             <div className="mascote-texto">
-              <span className="section-tag light">Espírito de Luta</span>
-              <h2 className="mascote-title">Nosso Mascote Oficial</h2>
-              <p>
-                Ele simboliza a <strong>lealdade, a garra e a determinação</strong> que carregamos em cada treino.
-                No Jiu-Jitsu, aprendemos que a verdadeira força não está em derrubar o outro, mas na coragem de levantar a cada queda e superar nossos próprios limites.
-              </p>
-              <div className="mascote-features">
-                <div className="m-feat">✓ Lealdade à equipe</div>
-                <div className="m-feat">✓ Respeito ao adversário</div>
-                <div className="m-feat">✓ Foco no objetivo</div>
+              <span className="section-tag light">Conheça o Professor</span>
+              <h2 className="mascote-title">Um pouco sobre nosso Professor</h2>
+
+              <div className="prof-creds">
+                <span className="cred-chip">🥋 Faixa Preta de Jiu-Jitsu</span>
+                <span className="cred-chip">📚 Professor de Matemática</span>
+                <span className="cred-chip">🎓 Educador há 20+ anos</span>
               </div>
+
+              <p className="bio-lead">
+                Meu nome é <strong>Alfredo Junior</strong>. Ao longo da minha trajetória,
+                descobri que ensinar vai muito além de transmitir conhecimentos:
+                é contribuir para a formação de pessoas, desenvolver valores e transformar vidas.
+              </p>
+
+              <p>
+                Foi com esse propósito que nasceu a <strong>Escola de Jiu-Jitsu Alfredo Junior</strong>,
+                um espaço dedicado ao ensino da arte suave, à formação de cidadãos
+                e ao desenvolvimento pessoal por meio do esporte.
+              </p>
+
+              <blockquote className="bio-destaque">
+                “O Jiu-Jitsu Salva!”
+              </blockquote>
+
+              <p>
+                Acredito que o jiu-jitsu é uma ferramenta poderosa para ensinar
+                <strong> disciplina, respeito, responsabilidade, autocontrole,
+                superação e autoconfiança</strong>. No tatame, cada aluno é incentivado
+                a superar seus próprios desafios, respeitar seus colegas e compreender
+                que as maiores conquistas são construídas com dedicação e perseverança.
+              </p>
+
+              <p>
+                Nossa escola é um ambiente acolhedor, familiar e comprometido com o
+                desenvolvimento de crianças, adolescentes e adultos — respeitando as
+                individualidades e valorizando a evolução de cada aluno.
+              </p>
+
+              <p className="bio-missao">
+                Mais do que formar atletas, nossa missão é formar pessoas melhores para a vida.
+              </p>
+
+              <div className="mascote-features">
+                <div className="m-feat">✓ Disciplina</div>
+                <div className="m-feat">✓ Respeito</div>
+                <div className="m-feat">✓ Autoconfiança</div>
+                <div className="m-feat">✓ Superação</div>
+              </div>
+
+              <p className="bio-fechamento">
+                Seja bem-vindo à <strong>Alfredo Junior Escola de Jiu-Jitsu</strong>.
+                Aqui, ensinamos muito além das técnicas — ensinamos valores que
+                acompanham você dentro e fora do tatame.
+              </p>
+
               <a href={linkAulaGratis} className="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                Faça Parte da Nossa Equipe
+                Venha Treinar Conosco
               </a>
             </div>
             <div className="mascote-imagem">

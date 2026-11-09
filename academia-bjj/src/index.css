@@ -742,17 +742,78 @@ h1, h2, h3, h4, .brand-name, .btn, .section-title, .tab-btn {
   margin-bottom: 1.8rem;
 }
 
+.prof-creds {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.cred-chip {
+  background: rgba(211, 47, 47, 0.15);
+  border: 1px solid rgba(211, 47, 47, 0.45);
+  color: #FF8A80;
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 0.45rem 0.9rem;
+  border-radius: 50px;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.bio-lead {
+  font-size: 1.15rem !important;
+  color: var(--branco) !important;
+  font-weight: 500;
+  line-height: 1.7 !important;
+}
+
+.bio-destaque {
+  margin: 1.5rem 0;
+  padding: 1.2rem 1.6rem;
+  border-left: 4px solid var(--vermelho);
+  background: rgba(211, 47, 47, 0.08);
+  border-radius: 0 12px 12px 0;
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-style: italic;
+  color: var(--vermelho-vibrante);
+  letter-spacing: 0.02em;
+}
+
+.bio-missao {
+  font-weight: 700;
+  color: var(--branco) !important;
+  font-size: 1.1rem !important;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 1rem 1.4rem;
+}
+
+.bio-fechamento {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 0.95rem !important;
+  color: #9CA3AF !important;
+}
+
 .mascote-features {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 0.6rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .m-feat {
-  font-size: 0.95rem;
-  font-weight: 600;
+  font-size: 0.88rem;
+  font-weight: 700;
   color: #FFA5A5;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
 }
 
 .mascote-imagem {
@@ -1252,7 +1313,15 @@ h1, h2, h3, h4, .brand-name, .btn, .section-title, .tab-btn {
   }
 
   .mascote-features {
-    align-items: center;
+    justify-content: center;
+  }
+
+  .prof-creds {
+    justify-content: center;
+  }
+
+  .bio-destaque {
+    text-align: center;
   }
 }
 
